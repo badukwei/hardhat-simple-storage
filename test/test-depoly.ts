@@ -2,7 +2,7 @@ const { ethers } = require("hardhat");
 const { expect, assert } = require("chai");
 
 describe("SimpleStorage", () => {
-    let SimpleStorageFactory, simpleStorage;
+    let SimpleStorageFactory, simpleStorage: any;
 
     beforeEach(async () => {
         SimpleStorageFactory = await ethers.getContractFactory("SimpleStorage");
