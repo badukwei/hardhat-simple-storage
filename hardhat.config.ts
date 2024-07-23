@@ -4,6 +4,8 @@ import "@nomicfoundation/hardhat-verify";
 import "./tasks/block-number";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
+import "@nomicfoundation/hardhat-ethers";
+import "@typechain/hardhat";
 
 const SOPOLIA_RPC_URL = process.env.SOPOLIA_RPC_URL;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
